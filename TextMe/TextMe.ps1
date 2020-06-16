@@ -1,6 +1,6 @@
 function Convert-TextToDial{
     param(
-        [ValidateLength(1,5)]
+        [ValidatePattern('^[a-zA-Z]{1,5}$')]
         [Parameter(Mandatory=$true)]
         [string]$Word
     )
